@@ -66,6 +66,7 @@ Defines the ConfigMap for MongoDB Express, containing the database URL.
 To delete the deployed resources:
 
 ```bash
-   To delete the deployed resources:
+   kubectl delete -f mongo-secret.yaml -f mongo.yaml -f mongo-service.yaml -f mongo-express.yaml -f mongo-express-service.yaml -f mongo-configmap.yaml
+   minikube stop
    ```
 
