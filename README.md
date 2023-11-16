@@ -20,8 +20,9 @@ This project demonstrates how to deploy MongoDB and MongoDB Express within a Min
    kubectl apply -f mongo-express-service.yaml
    kubectl apply -f mongo-configmap.yaml
    minikube service mongo-express-service
+   ```
 
-### YAML Files Overview
+## YAML Files Overview
 
  `mongo-secret.yaml`
 Contains the MongoDB authentication credentials as base64-encoded values.
