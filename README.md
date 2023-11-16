@@ -61,3 +61,11 @@ Defines the MongoDB Express Service as a LoadBalancer to expose the MongoDB Expr
 
  `mongo-configmap.yaml`
 Defines the ConfigMap for MongoDB Express, containing the database URL.
+
+## Cleanup
+To delete the deployed resources:
+
+```bash
+   To delete the deployed resources:
+   ```
+
