@@ -10,15 +10,35 @@ This project demonstrates how to deploy MongoDB and MongoDB Express within a Min
 ## Deployment Steps
 
 1. **Start Minikube:**
-
    ```bash
    minikube start
+   ```
+2. **Apply Secrets:**
+   ```bash
    kubectl apply -f mongo-secret.yaml
+   ```
+3. **Deploy MongoDB:**
+   ```bash
    kubectl apply -f mongo.yaml
+   ```
+4. **Deploy MongoDB Service:**
+   ```bash
    kubectl apply -f mongo-service.yaml
+   ```
+5. **Deploy MongoDB Express:**
+   ```bash
    kubectl apply -f mongo-express.yaml
+   ```
+6. **Deploy MongoDB Express Service:**
+   ```bash
    kubectl apply -f mongo-express-service.yaml
+   ```
+7. **Deploy MongoDB ConfigMap:**
+   ```bash
    kubectl apply -f mongo-configmap.yaml
+   ```
+8. **Access MongoDB Express:**
+   ```bash
    minikube service mongo-express-service
    ```
 
