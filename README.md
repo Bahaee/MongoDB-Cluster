@@ -25,17 +25,17 @@ This project demonstrates how to deploy MongoDB and MongoDB Express within a Min
    ```bash
    kubectl apply -f mongo-service.yaml
    ```
-5. **Deploy MongoDB Express:**
+5. **Deploy MongoDB ConfigMap:**
+   ```bash
+   kubectl apply -f mongo-configmap.yaml
+   ```
+6. **Deploy MongoDB Express:**
    ```bash
    kubectl apply -f mongo-express.yaml
    ```
-6. **Deploy MongoDB Express Service:**
+7. **Deploy MongoDB Express Service:**
    ```bash
    kubectl apply -f mongo-express-service.yaml
-   ```
-7. **Deploy MongoDB ConfigMap:**
-   ```bash
-   kubectl apply -f mongo-configmap.yaml
    ```
 8. **Access MongoDB Express:**
    ```bash
